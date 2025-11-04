@@ -42,11 +42,11 @@ namespace Components.ProceduralGeneration.SimpleRoomPlacement
                 int x = RandomService.Range(0, Grid.Width);
                 int y = RandomService.Range(0, Grid.Lenght);
 
-                float xSize = RandomService.Range(sizeMin.x, sizeMax.x);
-                float ySize = RandomService.Range(sizeMin.y, sizeMax.y);
+                float Width = RandomService.Range(sizeMin.x, sizeMax.x+1);
+                float Length = RandomService.Range(sizeMin.y, sizeMax.y+1);
 
                 // Your algorithm here
-                RectInt room = new RectInt(x,y, (int)xSize, (int)ySize);
+                RectInt room = new RectInt(x,y, (int)Width, (int)Length);
                 if (CanPlaceRoom(room))
                 {
                     PlaceRoom(room);
