@@ -12,6 +12,82 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 057545ef6b0bd6b49b874d73cf4e32d3, type: 3}
   m_Name: BSP
   m_EditorClassIdentifier: 
-  _maxSteps: 10
-  sizeMin: {x: 0, y: 0}
-  sizeMax: {x: 0, y: 0}
+  _maxSteps: 20
+  sizeMin: {x: 5, y: 5}
+  sizeMax: {x: 5, y: 5}
+  Tree:
+  - _bounds:
+      x: 0
+      y: 0
+      width: 64
+      height: 64
+  - _bounds:
+      x: 0
+      y: 0
+      width: 64
+      height: 57
+  - _bounds:
+      x: 28
+      y: 0
+      width: 36
+      height: 64
+  - _bounds:
+      x: 0
+      y: 0
+      width: 49
+      height: 57
+  - _bounds:
+      x: 0
+      y: 40
+      width: 64
+      height: 17
+  - _bounds:
+      x: 28
+      y: 0
+      width: 13
+      height: 64
+  - _bounds:
+      x: 41
+      y: 0
+      width: 23
+      height: 64
+  - _bounds:
+      x: 0
+      y: 0
+      width: 32
+      height: 57
+  - _bounds:
+      x: 0
+      y: 48
+      width: 49
+      height: 9
+  - _bounds:
+      x: 0
+      y: 40
+      width: 64
+      height: 15
+  - _bounds:
+      x: 30
+      y: 40
+      width: 34
+      height: 17
+  - _bounds:
+      x: 28
+      y: 0
+      width: 13
+      height: 59
+  - _bounds:
+      x: 28
+      y: 59
+      width: 13
+      height: 5
+  - _bounds:
+      x: 41
+      y: 0
+      width: 9
+      height: 64
+  - _bounds:
+      x: 50
+      y: 0
+      width: 14
+      height: 64
