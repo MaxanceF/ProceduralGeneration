@@ -147,9 +147,9 @@ public class CelularAutomata : ProceduralGenerationMethod
     bool IsBecomingGrass(int x, int y, int NbOfNearbyGrassNeeded)
     {
         int countgrass = 0;
-        for (int i = -1; i >= 1; i++)
+        for (int i = -1; i <= 1; i++)
         {
-            for (int j = -1; j >= 1; j++)
+            for (int j = -1; j <= 1; j++)
             {
                 if (x+i == x && y+j == y)
                 {
