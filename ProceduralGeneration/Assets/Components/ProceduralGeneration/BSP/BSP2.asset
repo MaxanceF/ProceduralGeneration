@@ -9,18 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce5cdbbb836167644ad1c857be24536e, type: 3}
-  m_Name: FastNoise
+  m_Script: {fileID: 11500000, guid: 0d6b80a17e41dcb47b41cf0463ba7a1f, type: 3}
+  m_Name: BSP2
   m_EditorClassIdentifier: 
   _maxSteps: 1000
-  _noiseType: 0
-  _frequency: 0.043
-  _amplitude: 0.816
-  _fractalType: 1
-  _octave: 3
-  _lacunarity: 2.56
-  _persistance: 0.5
-  _waterheight: -0.5
-  _sandheight: -0.23
-  _grassheight: 0.51
-  _rockheight: 0.9
+  HorizontalSplitChance: 0.5
+  SplitRatio: {x: 0.3, y: 0.7}
+  MaxSplitAttempt: 5
+  LeafMinSize: {x: 8, y: 8}
+  RoomMaxSize: {x: 7, y: 7}
+  RoomMinSize: {x: 5, y: 5}
+  Tree: []
