@@ -1,8 +1,7 @@
-﻿using Cysharp.Threading.Tasks;
-using System;
+﻿using System;
 using System.Threading;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.WSA;
 using VTools.Grid;
 using VTools.RandomService;
 using VTools.ScriptableObjectDatabase;
@@ -93,9 +92,8 @@ namespace Components.ProceduralGeneration
         
         protected void AddTileToCell(Cell cell, string tileName, bool overrideExistingObjects)
         {
-            
             var tileTemplate = ScriptableObjectDatabase.GetScriptableObject<GridObjectTemplate>(tileName);
-                GridGenerator.AddGridObjectToCell(cell, tileTemplate, overrideExistingObjects);
+            GridGenerator.AddGridObjectToCell(cell, tileTemplate, overrideExistingObjects);
         }
     }
 }
