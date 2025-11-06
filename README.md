@@ -1,6 +1,6 @@
-**Procedural Generation**
+#Procedural Generation
 ------------------------------------------------------------------------------------------------------------------------------------
--Simple Room Placement
--BSP
--Cellular Automata
--FastNoiseLite
+- **Simple Room Placement**
+- **BSP**
+- **Cellular Automata**
+- **FastNoiseLite**
