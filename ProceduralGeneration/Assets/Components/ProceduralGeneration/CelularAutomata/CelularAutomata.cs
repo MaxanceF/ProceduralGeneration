@@ -98,11 +98,10 @@ public class CelularAutomata : ProceduralGenerationMethod
             for (int j = 0; j < Grid.Lenght; j++)
             {
                 if (IsCorner(i, j))
-                {
-                    steplist[i][j] = 1;
+                {                    
                     if (!Grid.TryGetCellByCoordinates(i, j, out Cell cell))
                         continue;
-                    AddTileToCell(cell, "Water", true);
+                    steplist[i][j] = 1;
                 }
                 else
                 {
@@ -110,13 +109,13 @@ public class CelularAutomata : ProceduralGenerationMethod
                     {
                         if (!Grid.TryGetCellByCoordinates(i, j, out Cell cell))
                             continue;
-                        AddTileToCell(cell, "Grass", true);
+                        steplist[i][j] = 0;
                     }
                     else
                     {
                         if (!Grid.TryGetCellByCoordinates(i, j, out Cell cell))
                             continue;
-                        AddTileToCell(cell, "Water", true);
+                        steplist[i][j] = 1;
                     }
                 }
 
@@ -138,9 +137,9 @@ public class CelularAutomata : ProceduralGenerationMethod
     bool IsCorner(int x, int j)
     {
         if (x == 0 && j == 0) return true;
-        if (x == 64 && j == 64) return true;
-        if (x == 0 && j == 64) return true;
-        if (x == 64 && j == 0) return true;
+        if (x == Grid.Width && j == Grid.Lenght) return true;
+        if (x == 0 && j == Grid.Lenght) return true;
+        if (x == Grid.Width && j == 0) return true;
         return false;
     }
 
@@ -165,7 +164,6 @@ public class CelularAutomata : ProceduralGenerationMethod
             
             return true;
         }
-        Debug.Log(countgrass);
         return false;
     }
 }
