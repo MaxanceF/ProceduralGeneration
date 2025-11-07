@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxSteps: 1000
   _noiseType: 0
-  _frequency: 0.043
+  _frequency: 0.025
   _amplitude: 0.816
-  _fractalType: 1
-  _octave: 3
-  _lacunarity: 2.56
-  _persistance: 0.5
+  _fractalType: 2
+  _octave: 2
+  _lacunarity: 1
+  _persistance: 0.505
   _waterheight: -0.5
   _sandheight: -0.23
-  _grassheight: 0.51
-  _rockheight: 0.9
+  _grassheight: 0.4
+  _rockheight: 1

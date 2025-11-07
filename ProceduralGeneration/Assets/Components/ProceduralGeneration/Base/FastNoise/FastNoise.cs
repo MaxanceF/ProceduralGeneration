@@ -81,7 +81,7 @@ public class FastNoise : ProceduralGenerationMethod
                 {
                     AddTileToCell(cell, "Grass", true);
                 }             
-                else if (noise.GetNoise(i, j) >= _rockheight)
+                else if (noise.GetNoise(i, j) <= _rockheight && noise.GetNoise(i, j) >= _grassheight)
                 {
                     AddTileToCell(cell, "Rock", true);
                 }    
