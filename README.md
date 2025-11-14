@@ -2,6 +2,7 @@ Procedural Generation
 
 Dans ce projet, on peut utiliser 4 méthodes différentes de générétion procédurale avec chacune des utilités différentes.
 Toutes les méthodes sont des SO (scriptable object) et utilisent une seed pour gérer leur aléatoire.
+Exemple de création d'un SO qui fonctionne avec le ProceduralGridGenerator.cs (pour l'utiliser il faut juste glisser un SO créé dans le script ProceduralGridGenerator qui est sur un gameobject dans la scene
 
 ```csharp
  [CreateAssetMenu(menuName = "Procedural Generation Method/Simple Room Placement")]
