@@ -1,6 +1,7 @@
 Procedural Generation
 ===
-- **Simple Room Placement**
+## 1. Simple Room Placement
+
 - **BSP**
 - **Cellular Automata**
 - **FastNoiseLite**
