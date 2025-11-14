@@ -44,19 +44,24 @@ Exemple de création d'un SO qui fonctionne avec le ProceduralGridGenerator.cs (
 </center>
 
 ## 2.BSP
-
+* Une version plus complexe du simple room placement. Le BSP utilise des nodes qui se split pour créer des zones qui ensuite sont utiliser pour créer des salles et les lié
+* On peut changer la taille des salles en x et en y, des leafs, le ratio de partage horizontale
 <center>
     <img src="Images/BSPMap.png">
 </center>
 
 ## 3.Cellular Automata
-
+* Le cellular automata créer un bruit aléatoire (des 0 ou des 1 dans une liste dans cette situation)
+* Puis il applique un script un certain nombre de fois avec des conditions (ici aujouter de la terre si 4 cases ou plus dans les 8 cases autour sont de la terre)
+* On peut changer le nombre de fois qu'on répète les conditions
 <center>
     <img src="Images/CellularAutomataMap.png">
 </center>
 
 ## 4.FastNoiseLite
-
+* Créé un bruit à l'aide de FastNoise (https://github.com/Auburn/FastNoiseLite)
+* Possibilité de créer un bruit de perlin, simplex, etc
+* Possibilité d'ajouter des fractales
 <center>
     <img src="Images/FastNoiseMap.png">
 </center>
