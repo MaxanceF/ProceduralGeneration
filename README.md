@@ -14,4 +14,8 @@ Procedural Generation
 
 ## 3.Cellular Automata
 
+<center>
+    <img src="Images/CellularAutomataMap.png">
+</center>
+
 ## 4.FastNoiseLite
