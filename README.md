@@ -19,3 +19,7 @@ Procedural Generation
 </center>
 
 ## 4.FastNoiseLite
+
+<center>
+    <img src="Images/FastNoiseMap.png">
+</center>
