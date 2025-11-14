@@ -36,8 +36,8 @@ Exemple de création d'un SO qui fonctionne avec le ProceduralGridGenerator.cs (
 
 ===
 ## 1. Simple Room Placement
-*La version simplifié du BSP, elle est utile pour la création de carte avec des salles
-*On peut changer la taille des salles en x et en y
+* La version simplifié du BSP, elle est utile pour la création de carte avec des salles
+* On peut changer la taille des salles en x et en y
 
 <center>
     <img src="Images/SimpleRoomMap.png">
