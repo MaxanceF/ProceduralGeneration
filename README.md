@@ -4,7 +4,33 @@ Dans ce projet, on peut utiliser 4 méthodes différentes de générétion proc�
 Toutes les méthodes sont des SO (scriptable object) et utilisent une seed pour gérer leur aléatoire.
 
 ```csharp
+ [CreateAssetMenu(menuName = "Procedural Generation Method/Simple Room Placement")]
+    public class SimpleRoomPlacement : ProceduralGenerationMethod
+    {
+        [Header("Room Parameters")]
+        [SerializeField] private int _maxRooms = 10;
+        
+        protected override async UniTask ApplyGeneration(CancellationToken cancellationToken)
+        {
+            // Declare variables here
+            // ........
 
+            for (int i = 0; i < _maxSteps; i++)
+            {
+                // Check for cancellation
+                cancellationToken.ThrowIfCancellationRequested();
+                
+                // Your algorithm here
+                // .......
+
+                // Waiting between steps to see the result.
+                await UniTask.Delay(GridGenerator.StepDelay, cancellationToken : cancellationToken);
+            }
+            
+            // Final ground building.
+            BuildGround();
+        }
+}
 ```
 
 ===
